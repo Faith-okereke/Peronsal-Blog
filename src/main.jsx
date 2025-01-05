@@ -5,6 +5,7 @@ import "./index.css";
 import NavBar from "./components/NavBar.jsx";
 import BlogContext from "./contextStore/BlogContext.jsx";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BlogContext>
         <NavBar />
         <App />
+        <Footer/>
       </BlogContext>
     </React.StrictMode>
   </BrowserRouter>
